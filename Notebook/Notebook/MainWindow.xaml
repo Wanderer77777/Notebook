@@ -1,0 +1,15 @@
+﻿<Window x:Class="Notebook.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Notebook"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="375.852" Width="441.477">
+    <Grid Margin="0,0,2,0">
+        <Button x:Name="LoadBtn" Content="Load" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="175" Click="LoadBtn_Click"/>
+        <Button x:Name="SaveBtn" Content="Save" HorizontalAlignment="Left" Margin="246,10,0,0" VerticalAlignment="Top" Width="175" ScrollViewer.HorizontalScrollBarVisibility="Visible" Click="SaveBtn_Click"/>
+        <TextBox x:Name="TextBox" HorizontalAlignment="Left" Height="300" Margin="10,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="411" HorizontalScrollBarVisibility="Visible" Text="{Binding MyText}" AcceptsReturn="True"/>
+
+    </Grid>
+</Window>
